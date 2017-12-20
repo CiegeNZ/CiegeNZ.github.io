@@ -1,37 +1,72 @@
-## Welcome to GitHub Pages
+# Welcome to TheRuntPit 
 
-You can use the [editor on GitHub](https://github.com/Connerf/connerf.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Discord
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The runt pit has it's own discord server...
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Connerf/connerf.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel=
+    "stylesheet">
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+    rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Discord Webhook Sender</title>
+    <style>
+    .btn-full-width {
+    width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="card card-panel center">
+            <h1>Discord Webhook Sender</h1>
+        </div>
+        <div class="card card-panel">
+            <div class="input-field">
+                <input id="url" type="text"> <label for=
+                "url">Webhook URL</label>
+            </div>
+            <div class="input-field">
+                <input id="content" type="text"> <label for=
+                "content">Text</label>
+            </div>
+            <div class="row">
+                <div class="input-field s6 col">
+                    <input id="username" type="text"> <label for=
+                    "username">Username</label>
+                </div>
+                <div class="input-field s6 col">
+                    <input id="avatar_url" type="text"> <label for=
+                    "avatar_url">Avatar Url</label>
+                </div>
+            </div>
+        </div><a class="btn btn-large btn-full-width waves-effect waves-light"
+        href="#!">Send</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type=
+    "text/javascript">
+    </script> 
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js">
+    </script> 
+    <script>
+    $(function() {
+        $('a').click(function(e) {
+        var url = $("#url").val();
+        var content = $("#content").val();
+        var username = $("#username").val();
+        var avatar_url = $("#avatar_url").val();
+        $.post(url,
+    {"content": content, "username": username, "avatar_url": avatar_url},
+        function(){
+            Materialize.toast('Message Sent!', 4000)
+        });
+        });
+    });
+    </script>
+</body>
+</html>
