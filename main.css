@@ -1,19 +1,57 @@
 html {
     background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
-}
-
-body {
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    
+}
+
+header {
+    position: relative;
     margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
+}
+
+#welcome {
+    position: relative;
+    top: -100px;
+    left: 50%;
+    margin: 0px -130px auto;
+    color: pink;
+}
+
+#pig1 {
+    position: absolute;
+    top: 70px;
+    left: 140px;
+}
+
+#pig2 {
+    position: absolute;
+    top: 90px;
+    left: 310px;
+}
+
+#pig3 {
+    position: absolute;
+    top: 60px;
+    left: 400px;
+}
+
+body {
+
+}
+
+.main{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.6);
+    padding: 5px 15px;
+    margin-top: 20px;
+    border: black solid 5px
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,4 +95,10 @@ img {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
     }
+}
+
+#discordmessagesystem {
+    background: black;
+    border: 10px solid yellow;
+    padding-bottom: 15px;
 }

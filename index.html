@@ -7,10 +7,79 @@
         <title>TheRuntPit</title>
         <meta name="description" content="Welcome to the runt pit.">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel='shortcut icon' type='image' href='Assets/favicon.png' />
     </head>
+    <header>
+        <img alt="header" src="Assets/pigsty.png" width="100%">
+        <img id="pig1" class="animated infinite tada" alt="pig" src="Assets/runt.svg" width="150px">
+        <img id="pig2" class="animated infinite bounce" alt="pig" src="Assets/runt.svg" width="90px">
+        <img id="pig3" class="animated infinite headShake" alt="pig" src="Assets/runt.svg" width="200px">
+        <h1 id="welcome" class="animated jackInTheBox">Welcome to the runt pit </h1>
+    </header>
     <body>
-    <h1>Welcome to the runt pit </h1>
-    <br><br>
+    <div class="main">
     <h3>Work in progress </h3>
+        <br>
+        
+        <!-- Discord Message Delivery Center -->
+        <div id="discordmessagesystem">
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel=
+    "stylesheet">
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+    rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Send a message to our discord</title>
+    <style>
+    .btn-full-width {
+    width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="card card-panel center">
+            <h2>Send a message to our discord</h2>
+        </div>
+        <div class="card card-panel">
+            <div class="input-field">
+                    <input id="username" type="text"> <label for=
+                    "username">Username</label>
+                </div>
+            <div class="input-field">
+                <input id="content" type="text"> <label for=
+                "content">Text</label>
+            </div>
+        </div><a class="btn btn-large btn-full-width waves-effect waves-light"
+        href="#!">Send</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type=
+    "text/javascript">
+    </script> 
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js">
+    </script> 
+    <script>
+    $(function() {
+        $('a').click(function(e) {
+        var url = "https://discordapp.com/api/webhooks/393001691039006721/dsYXcmqsDLl7TqbSy2urMpravPVtVaoPOjaggEDAlK4gkv0KOEPdOw0dg7--zj45LQTo";
+        var content = $("#content").val();
+        var username = "TheRuntPit.ml | " + $("#username").val();
+        $.post(url,
+    {"content": content, "username": username},
+        function(){
+            Materialize.toast('Message Sent!', 1500)
+        });
+        });
+    });
+    </script>
+</body>
+</html>
+        </div>
+        <!-- Discord Message Delivery Center -->
+        </div>
     </body>
 </html>
