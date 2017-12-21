@@ -8,6 +8,16 @@ html {
     min-width: 479px;
 }
 
+    nav a{
+        background: gray;
+        border: 5px sloid blue;
+    }
+
+iframe #widget {
+    position: relative;
+    left 200px;
+}
+
 @media screen and (max-width: 480px) {
 
     body {
@@ -20,12 +30,12 @@ html {
         margin: 0 auto;
         width: 100%;
         padding: 5px;
-        border: 2px solid black;
     }
     
     .nav {
-        padding: 5px;
+        padding: 15px 5px;
         text-align: center;
+        width: 100%;
     }
     
     .nav a {
@@ -39,14 +49,6 @@ html {
     #pigsty {
         position: relative;
         width: 100%;
-    }
-
-    #welcome {
-        position: relative;
-        top: -35px;
-        color: pink;
-        font-size: 36px;
-        text-align: center;
     }
 
     #pig1 {
@@ -82,7 +84,6 @@ html {
         background: rgba(255,255,255,0.6);
         padding: 5px 15px;
         margin-top: 20px;
-        border: black solid 5px
 
     }
 
@@ -129,18 +130,12 @@ html {
         }
     }
 
-    #discordmessagesystem {
-        background: black;
-        border: 10px solid yellow;
-        padding-bottom: 15px;
-    }
-
     }
 
 @media screen and (min-width: 481px) {
     header {
         width: 100%;
-        border: 2px solid black;
+        
     }
     
     .nav {
@@ -160,13 +155,6 @@ html {
     #pigsty {
         position: relative;
         width: 100%;
-    }
-
-    #welcome {
-        position: relative;
-        top: -39px;
-        color: pink;
-        text-align: center;
     }
 
     #pig1 {
@@ -195,7 +183,7 @@ html {
 @media screen and (min-width: 720px) {
     header {
         width: 100%;
-        border: 2px solid black;
+        
     }
     
     .nav {
@@ -215,12 +203,6 @@ html {
     #pigsty {
         position: relative;
         width: 100%;
-    }
-
-    #welcome {
-        position: relative;
-        top: -39px;
-        color: pink;
     }
 
     #pig1 {
@@ -249,7 +231,7 @@ html {
 @media screen and (min-width: 1200px) {
     
     header {
-        border: 2px solid black;
+        
     }
     
     .nav {
@@ -264,13 +246,6 @@ html {
         font-size: 42px;
         top: -30px;
         position: relative;
-    }
-    
-    #welcome {
-        position: relative;
-        top: -39px;
-        font-size: 72px;
-        color: pink;
     }
     
     #pig1 {
