@@ -4,101 +4,294 @@ html {
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    
+    line-height: 1.5;  
+    min-width: 479px;
 }
 
-header {
-    position: relative;
-    margin: 0 auto;
-}
+@media screen and (max-width: 480px) {
 
-#welcome {
-    position: relative;
-    top: -100px;
-    left: 50%;
-    margin: 0px -130px auto;
-    color: pink;
-}
-
-#pig1 {
-    position: absolute;
-    top: 70px;
-    left: 140px;
-}
-
-#pig2 {
-    position: absolute;
-    top: 90px;
-    left: 310px;
-}
-
-#pig3 {
-    position: absolute;
-    top: 60px;
-    left: 400px;
-}
-
-body {
-
-}
-
-.main{
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.6);
-    padding: 5px 15px;
-    margin-top: 20px;
-    border: black solid 5px
-    
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-h2 {
-    margin-top: 1.3em;
-}
-
-a {
-    color: #0083e8;
-}
-
-b, strong {
-    font-weight: 600;
-}
-
-samp {
-    display: none;
-}
-
-img {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: block;
-    margin: 1.3em auto;
-    max-width: 95%;
-}
-
-@keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+    body {
+        width: 480px;
+        max-width: 480px;
     }
-    100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
+
+    header {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding: 5px;
+        border: 2px solid black;
+    }
+    
+    .nav {
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .nav a {
+        padding: 5px;
+        margin: 10px 5px;
+        font-size: 18px;
+        top: -30px;
+        position: relative;
+    }
+
+    #pigsty {
+        position: relative;
+        width: 100%;
+    }
+
+    #welcome {
+        position: relative;
+        top: -35px;
+        color: pink;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #pig1 {
+        position: absolute;
+        width: 50px;
+        top: 20px;
+        left: 80px;
+        z-index: 1;
+    }
+
+    #pig2 {
+        position: absolute;
+        width: 35px;
+        top: 15px;
+        left: 120px;
+    }
+
+    #pig3 {
+        position: absolute;
+        width: 75px;
+        top: -10px;
+        left: 170px;
+    }
+
+    body {
+
+    }
+
+    .main{
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.6);
+        padding: 5px 15px;
+        margin-top: 20px;
+        border: black solid 5px
+
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #222;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    h2 {
+        margin-top: 1.3em;
+    }
+
+    a {
+        color: #0083e8;
+    }
+
+    b, strong {
+        font-weight: 600;
+    }
+
+    samp {
+        display: none;
+    }
+
+    img {
+        animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+        background: transparent;
+        border: 10px solid rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        display: block;
+        margin: 1.3em auto;
+        max-width: 95%;
+    }
+
+    @keyframes colorize {
+        0% {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        100% {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+    }
+
+    #discordmessagesystem {
+        background: black;
+        border: 10px solid yellow;
+        padding-bottom: 15px;
+    }
+
+    }
+
+@media screen and (min-width: 481px) {
+    header {
+        width: 100%;
+        border: 2px solid black;
+    }
+    
+    .nav {
+        padding: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .nav a {
+        padding: 5px;
+        margin: 10px 5px;
+        font-size: 32px;
+        top: -30px;
+        position: relative;
+    }
+    
+    #pigsty {
+        position: relative;
+        width: 100%;
+    }
+
+    #welcome {
+        position: relative;
+        top: -39px;
+        color: pink;
+        text-align: center;
+    }
+
+    #pig1 {
+        position: absolute;
+        width: 20%;
+        top: -1%;  
+        left: 15%;
+        z-index: 1;
+    }
+
+    #pig2 {
+        position: absolute;
+        width: 15%;
+        top: 4%;
+        left: 35%;
+    }
+
+    #pig3 {
+        position: absolute;
+        width: 25%;
+        top: -3%;
+        left: 55%;
     }
 }
 
-#discordmessagesystem {
-    background: black;
-    border: 10px solid yellow;
-    padding-bottom: 15px;
+@media screen and (min-width: 720px) {
+    header {
+        width: 100%;
+        border: 2px solid black;
+    }
+    
+    .nav {
+        padding: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .nav a {
+        padding: 5px;
+        margin: 10px 5px;
+        font-size: 36px;
+        top: -30px;
+        position: relative;
+    }
+    
+    #pigsty {
+        position: relative;
+        width: 100%;
+    }
+
+    #welcome {
+        position: relative;
+        top: -39px;
+        color: pink;
+    }
+
+    #pig1 {
+        position: absolute;
+        width: 20%;
+        top: -1%;  
+        left: 15%;
+        z-index: 1;
+    }
+
+    #pig2 {
+        position: absolute;
+        width: 15%;
+        top: 4%;
+        left: 35%;
+    }
+
+    #pig3 {
+        position: absolute;
+        width: 25%;
+        top: -4%;
+        left: 55%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    header {
+        border: 2px solid black;
+    }
+    
+    .nav {
+        padding: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .nav a {
+        padding: 5px;
+        margin: 10px 5px;
+        font-size: 42px;
+        top: -30px;
+        position: relative;
+    }
+    
+    #welcome {
+        position: relative;
+        top: -39px;
+        font-size: 72px;
+        color: pink;
+    }
+    
+    #pig1 {
+        position: absolute;
+        width: 20%;
+        top: -1%;  
+        left: 15%;
+        z-index: 1;
+    }
+
+    #pig2 {
+        position: absolute;
+        width: 15%;
+        top: 4%;
+        left: 35%;
+    }
+
+    #pig3 {
+        position: absolute;
+        width: 25%;
+        top: -6%;
+        left: 55%;
+    }
 }
