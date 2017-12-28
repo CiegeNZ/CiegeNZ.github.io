@@ -1,5 +1,7 @@
 html {
-    background: #e6e9e9;
+    background-image: url(Assets/farm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-font-smoothing: antialiased;
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -8,15 +10,33 @@ html {
     min-width: 479px;
 }
 
-    nav a{
+    .nav a{
         background: gray;
         border: 5px sloid blue;
+        text-decoration: none;
+        color: white;
+        box-shadow: 3px 4px 3px;
     }
 
-iframe #widget {
-    position: relative;
-    left 200px;
+    .nav a:hover{
+        background: black;
+        border: 8px sloid blue;
+        text-decoration: none;
+        color: yellow;
+        box-shadow: 6px 14px 9px;
+        text-shadow: -9px -14px 9px;
+    }
+
+.homeimg{
+    margin: auto; 
+    left: 50%;
+    position: absolute;
 }
+
+    iframe #widget {
+        position: relative;
+        left 200px;
+    }
 
 @media screen and (max-width: 480px) {
 
@@ -49,6 +69,7 @@ iframe #widget {
     #pigsty {
         position: relative;
         width: 100%;
+        background-color: aliceblue;
     }
 
     #pig1 {
@@ -155,6 +176,7 @@ iframe #widget {
     #pigsty {
         position: relative;
         width: 100%;
+        background-color: aliceblue;
     }
 
     #pig1 {
@@ -203,6 +225,7 @@ iframe #widget {
     #pigsty {
         position: relative;
         width: 100%;
+        background-color: aliceblue;
     }
 
     #pig1 {
