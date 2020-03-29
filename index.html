@@ -12,31 +12,57 @@
         <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <title>Model Site</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>CodeBits</title>
     </head>
-	<div class="menu">
-
-		<h1>CodeBits</h1>
-	</div>
-	<div class="centerBlob">
-		<h2>Update in progress</h2>
-	</div>
-	<div onClick="window.scroll({top: window.innerHeight,left: 0,behavior: 'smooth'});" class="centerArrow"></div>
-
-
-	<!-- Page 2 -->
-	<div class="pg2">
-		<h1>Boxes</h1>
-		<div class="pg2box1"><img src="Assets/rect.png" alt="rect" height="220px"><h2>Something</h2></div>
-		<div class="pg2box2"><img src="Assets/rect2.png" alt="rect2" height="210px"><h2>Another Thing</h2></div>
-		<div class="pg2box3"><img src="Assets/rect3.png" alt="rect3" height="205px"><h2>More Things</h2></div>
-		<div class="pg2box4"><img src="Assets/rect4.png" alt="rect4" height="220px"><h2>Just One More</h2></div>
-		<div class="pg2box5"><img src="Assets/rect5.png" alt="rect5" height="210px"><h2>Final Thing</h2></div>
-	</div>
+    
+    <body class="home">
+        <div class="title">
+            <p class="letter">C</p>
+            <p class="letter">o</p>
+            <p class="letter">d</p>
+            <p class="letter">e</p>
+            <p class="letter">B</p>
+            <p class="letter">i</p>
+            <p class="letter">t</p>
+            <p class="letter">s</p>
+            <img src="Assets/stroke.png" alt="red underline" style="filter: grayscale(0%);">
+        </div>
+        
+        <div class="main">
+            <div class="scrollable">
+                <h1 class="heading">Work in Progess</h1>
+                <h1 class="heading">Extra Page Links</h1>
+                <h1 class="heading">Other Stuff Soon</h1>
+            </div>
+            <span id="scollBlurTop"></span>
+            <img src="Assets/rect.png">
+            <span id="scollBlurBot"></span>
+        </div>
+    </body>
+    
 </html>
 
-<script type="text/javascript">
-	function scrollWin(x, y) {
-		window.scrollBy(x, y);
-	}
+<script>
+$(".letter").each(function (index) {
+   $(this).css("animation-delay", "0."+index+"s");
+});
+    
+var menuPos = 260;
+$('html').on ('mousewheel', function (e) {
+    var delta = e.originalEvent.wheelDelta;
+    var y = $('.scrollable').offset({top: y});
+    
+    if (delta > 0) {
+        if(menuPos != -20){
+            $('.scrollable').css("top", (menuPos - 140 + "px"));
+            menuPos -= 140;
+        }
+    } else if (delta < 0) {
+        if(menuPos != 260){
+            $('.scrollable').css("top", (menuPos + 140 + "px"));
+            menuPos += 140;
+        }
+    }
+});
 </script>
