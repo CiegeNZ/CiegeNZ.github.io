@@ -1,68 +1,52 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="title" content="Template Site">
-        <meta name="description" content="This site is a template of design ideas">
-        <meta name="keywords" content="Design, Idea, Template, Testing, Practice">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="English">
-        <meta name="author" content="Conner Farrant">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>CodeBits</title>
-    </head>
-    
-    <body class="home">
-        <div class="title">
-            <p class="letter">C</p>
-            <p class="letter">o</p>
-            <p class="letter">d</p>
-            <p class="letter">e</p>
-            <p class="letter">B</p>
-            <p class="letter">i</p>
-            <p class="letter">t</p>
-            <p class="letter">s</p>
-            <img src="Assets/stroke.png" alt="red underline" style="filter: grayscale(0%);">
-        </div>
-        
-        <div class="main">
-            <div class="scrollable">
-                <h1 class="heading">Work in Progess</h1>
-                <h1 class="heading">Extra Page Links</h1>
-                <h1 class="heading">Other Stuff Soon</h1>
-            </div>
-            <span id="scollBlurTop"></span>
-            <img src="Assets/rect.png">
-            <span id="scollBlurBot"></span>
-        </div>
-    </body>
-    
-</html>
+<!doctype html>
 
-<script>
-$(".letter").each(function (index) {
-   $(this).css("animation-delay", "0."+index+"s");
-});
-    
-var menuPos = 260;
-$('html').on ('mousewheel', function (e) {
-    var delta = e.originalEvent.wheelDelta;
-    var y = $('.scrollable').offset({top: y});
-    
-    if (delta > 0) {
-        if(menuPos != -20){
-            $('.scrollable').css("top", (menuPos - 140 + "px"));
-            menuPos -= 140;
-        }
-    } else if (delta < 0) {
-        if(menuPos != 260){
-            $('.scrollable').css("top", (menuPos + 140 + "px"));
-            menuPos += 140;
-        }
-    }
-});
-</script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>My Portfolio | Conner Farrant</title>
+  <meta name="description" content="My Portfolio | Conner Farrant">
+  <meta name="author" content="Conner Farrant">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="main_background">
+  <div id="main_welcome">
+    <h1>I am Conner</h1>
+  </div>
+  <div id="main_apps">
+    <div class="glow"></div>
+    <h2>My apps</h2>
+    <img src="assets/phone.svg">
+  </div>
+  <div id="main_projects">
+    <div class="glow"></div>
+    <h2>My projects</h2>
+    <img src="assets/laptop.svg">
+  </div>
+  <div id="main_education">
+    <div class="glow"></div>
+    <h2>My education</h2>
+    <img src="assets/notepad.svg">
+  </div>
+  <div id="main_coffee">
+    <div class="glow"></div>
+    <h4>Slight coffee addiction</h4>
+    <img src="assets/coffee.svg">
+  </div>
+  <div id="main_mouse">
+    <div class="glow"></div>
+    <img src="assets/mouse.svg">
+  </div>
+  <div id="main_pencil">
+    <div class="glow"></div>
+    <img src="assets/pencil.svg">
+  </div>
+
+  <script src="js/scripts.js"></script>
+  
+</body>
+</html>

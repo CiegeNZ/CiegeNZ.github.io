@@ -1,0 +1,19 @@
+<svg width="129" height="258" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.c0{fill:#94A4A5;} .c1{fill:#CCD9D7;} .c2{fill:#AEC0BD;} .c3{fill:#EDEEEF;} .c4{fill:#808787;} .c5{fill:#616B6C;} .c6{fill:#CDD6D6;} .c7{fill:#495153;} .c8{fill:#5B6767;} .c9{fill:#324040;} .c10{fill:#495E5E;} .c11{fill:#A9562B;} .c12{fill:#804529;} .c13{fill:#64696B;} .c14{fill:#FFFFFF;} .c15{fill:#AEC6C2;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="260" width="131" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_126" class="phone">
+   <path id="svg_127" d="m9.914,0.38l54.381,0l0,255.802l-54.381,0c-5.475,0 -9.914,-4.438 -9.914,-9.914l0,-235.975c0.001,-5.475 4.439,-9.913 9.914,-9.913z" class="c4"/>
+   <path id="svg_128" d="m64.295,0.38l54.381,0c5.475,0 9.913,4.438 9.913,9.914l0,235.975c0,5.475 -4.438,9.914 -9.913,9.914l-54.381,0l0,-255.803z" class="c13"/>
+   <rect id="svg_129" height="194.946" width="104.865" class="c14" y="29.26" x="11.862"/>
+   <rect id="svg_130" height="5.845" width="23.38" class="c14" y="15.852" x="52.605"/>
+   <rect id="svg_131" height="4.616" width="4.616" class="c14" y="7.995" x="61.987"/>
+   <circle id="svg_132" r="11.69" cy="240.366" cx="64.295" class="c14"/>
+  </g>
+ </g>
+</svg>

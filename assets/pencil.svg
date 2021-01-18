@@ -1,0 +1,17 @@
+<svg width="25" height="325" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.c0{fill:#94A4A5;} .c1{fill:#CCD9D7;} .c2{fill:#AEC0BD;} .c3{fill:#EDEEEF;} .c4{fill:#808787;} .c5{fill:#616B6C;} .c6{fill:#CDD6D6;} .c7{fill:#495153;} .c8{fill:#5B6767;} .c9{fill:#324040;} .c10{fill:#495E5E;} .c11{fill:#A9562B;} .c12{fill:#804529;} .c13{fill:#64696B;} .c14{fill:#FFFFFF;} .c15{fill:#AEC6C2;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="327" width="27" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_117" class="pencil">
+   <polygon id="svg_118" points="12.541015625,1 1,34.2239990234375 23.8570556640625,34.2239990234375 " class="c3"/>
+   <rect id="svg_119" height="291.585" width="11.428" class="c8" y="34.224" x="1.00005"/>
+   <rect id="svg_120" height="291.585" width="11.428" class="c9" y="34.224" x="12.42805"/>
+   <polygon id="svg_121" points="16.362060546875,12.220001220703125 12.541015625,1 8.64306640625,12.220001220703125 " class="c10"/>
+  </g>
+ </g>
+</svg>

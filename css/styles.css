@@ -1,0 +1,491 @@
+/* General CSS */
+html {
+  overflow: hidden;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#main_background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #94A4A5;
+}
+
+#main_welcome {
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+}
+
+#main_apps {
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+}
+
+#main_projects {
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+}
+
+#main_education {
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+}
+
+#main_coffee {
+  color: #fff;
+  font-family: monospace;
+  text-align: left;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  #main_background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #main_welcome {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #main_apps {
+    position: absolute;
+    top: 22%;
+    width: auto;
+    left: 55%;
+    font-size: 2em;
+  }
+
+  #main_apps h2 {
+    position: relative;
+    left: 60px;
+    top: 145px;
+    transform: rotate(90deg);
+  }
+
+  #main_apps img {
+    position: relative;
+    top: -40px;
+    transform: scale(0.6);
+  }
+
+  #main_projects {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 2em;
+  }
+
+  #main_projects h2 {
+    position: relative;
+  }
+
+  #main_projects img {
+    position: relative;
+    top: -180px;
+    left: -270px;
+    transform: scale(0.40);
+  }
+
+  #main_education {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    font-size: 1.5em;
+  }
+
+  #main_education h2 {
+    position: relative;
+    transform: rotate(8deg);
+  }
+
+  #main_education img {
+    position: relative;
+    top: -270px;
+    left: -130px;
+    transform: scale(0.25);
+  }
+}
+
+/* Laptop/tablet */
+@media only screen and (min-width: 768px) {
+  #main_background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #main_welcome {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-size: 3.5em;
+  }
+
+  #main_apps {
+    position: absolute;
+    top: 18%;
+    width: auto;
+    left: 65%;
+    font-size: 2em;
+  }
+
+  #main_apps h2 {
+    position: relative;
+    left: 60px;
+    top: 145px;
+    transform: rotate(90deg);
+  }
+
+  #main_apps img {
+    position: relative;
+    top: -40px;
+    transform: scale(0.6);
+  }
+
+  #main_projects {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 2.5em;
+  }
+
+  #main_projects h2 {
+    position: relative;
+  }
+
+  #main_projects img {
+    position: relative;
+    top: -180px;
+    left: -250px;
+    transform: scale(0.45);
+  }
+
+  #main_education {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    font-size: 2em;
+  }
+
+  #main_education h2 {
+    position: relative;
+    transform: rotate(8deg);
+  }
+
+  #main_education img {
+    position: relative;
+    top: -270px;
+    left: -130px;
+    transform: scale(0.25);
+  }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  #main_background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+  }
+
+  #main_welcome {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 4.5em;
+  }
+
+  #main_apps {
+    position: absolute;
+    top: 13%;
+    width: auto;
+    left: 70%;
+    font-size: 2em;
+  }
+
+  #main_apps h2 {
+    position: relative;
+    left: 60px;
+    top: 145px;
+    transform: rotate(90deg);
+  }
+
+  #main_apps img {
+    position: relative;
+    top: -40px;
+    transform: scale(0.7);
+  }
+
+  #main_projects {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 3em;
+  }
+
+  #main_projects h2 {
+    position: relative;
+  }
+
+  #main_projects img {
+    position: relative;
+    top: -170px;
+    left: -220px;
+    transform: scale(0.5);
+  }
+
+  #main_education {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    font-size: 2em;
+  }
+
+  #main_education h2 {
+    position: relative;
+    transform: rotate(8deg);
+  }
+
+  #main_education img {
+    position: relative;
+    top: -230px;
+    left: -110px;
+    transform: scale(0.35);
+  }
+
+}
+
+  /* XL Desktop */
+@media only screen and (min-width: 1199px) {
+  #main_background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #main_welcome {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 5em;
+  }
+
+  #main_apps {
+    position: absolute;
+    top: 13%;
+    height: auto;
+    width: auto;
+    left: 80%;
+    font-size: 3em;
+    z-index: 1;
+  }
+
+  #main_apps h2 {
+    position: relative;
+    left: 60px;
+    top: 170px;
+    transform: rotate(90deg);
+  }
+
+  #main_apps img {
+    position: relative;
+    top: -40px;
+    transform: rotate(-3deg) scale(0.8);
+    animation: vibrate 10s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0s infinite both;
+  }
+
+  #main_apps .glow {
+    position: absolute;
+    top: 130px;
+    left: 7px;
+    width: 110px;
+    height: 240px;
+    animation: glow 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 9s infinite alternate both;
+  }
+
+  #main_projects {
+    position: absolute;
+    width: 600px;
+    height: 470px;
+    top: 30%;
+    left: 30%;
+    font-size: 3em;
+  }
+
+  #main_projects h2 {
+    position: relative;
+  }
+
+  #main_projects img {
+    position: relative;
+    top: -130px;
+    left: -160px;
+    transform: scale(0.65);
+  }
+
+  #main_projects .glow {
+    position: absolute;
+    height: 320px;
+    width: 500px;
+    top: 130px;
+    left: 35px;
+    animation: glow 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s infinite alternate both;
+  }
+
+  #main_education {
+    position: absolute;
+    width: 300px;
+    height: 490px;
+    top: 20%;
+    left: 3%;
+    font-size: 3em;
+  }
+
+  #main_education h2 {
+    position: relative;
+    transform: rotate(8deg);
+  }
+
+  #main_education img {
+    position: relative;
+    top: -180px;
+    left: -65px;
+    transform: rotate(4deg) scale(0.5);
+  }
+
+  #main_education .glow {
+    position: absolute;
+    top: 210px;
+    left: 33px;
+    transform: rotate(5deg) scale(0.8);
+    width: 200px;
+    height: 300px;
+    animation: glow 7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s infinite alternate both;
+  }
+
+  #main_coffee {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+  }
+
+  #main_coffee h4 {
+    position: relative;
+    top: 210px;
+  }
+
+  #main_coffee img {
+    transform: scale(1.3);
+  }
+
+  #main_mouse {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: rotate(-7deg);
+  }
+
+  #main_pencil {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: rotate(-2deg) scale(0.6);
+  }
+
+  #main_pencil img {
+    animation: roll 800s cubic-bezier(0.165, 0.840, 0.440, 1.000) 6s 1 both;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation vibrate
+ * ----------------------------------------
+ */
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  1% {
+    transform: translate(-2px, 2px);
+  }
+  2% {
+    transform: translate(-2px, -2px);
+  }
+  3% {
+    transform: translate(2px, 2px);
+  }
+  4% {
+    transform: translate(2px, -2px);
+  }
+  5% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/**
+* ----------------------------------------
+* roll animation
+* ----------------------------------------
+*/
+@keyframes roll {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-1000px, 0);
+  }
+}
+
+/**
+* ----------------------------------------
+* glow animation
+* ----------------------------------------
+*/
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  95% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 50px 30px rgb(255, 255, 255);
+  }
+}

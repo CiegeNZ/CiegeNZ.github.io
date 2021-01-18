@@ -1,0 +1,16 @@
+<svg width="94" height="177" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.c0{fill:#94A4A5;} .c1{fill:#CCD9D7;} .c2{fill:#AEC0BD;} .c3{fill:#EDEEEF;} .c4{fill:#808787;} .c5{fill:#616B6C;} .c6{fill:#CDD6D6;} .c7{fill:#495153;} .c8{fill:#5B6767;} .c9{fill:#324040;} .c10{fill:#495E5E;} .c11{fill:#A9562B;} .c12{fill:#804529;} .c13{fill:#64696B;} .c14{fill:#FFFFFF;} .c15{fill:#AEC6C2;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="179" width="96" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_133" class="mouse">
+   <path id="svg_134" d="m37.697,0l7.229,0l0,174.037l-7.229,0c-20.819,0 -37.697,-16.878 -37.697,-37.697l0,-98.643c0,-20.819 16.878,-37.697 37.697,-37.697z" class="c15"/>
+   <path id="svg_135" d="m52.156,0l-7.229,0l0,174.037l7.229,0c20.82,0 37.697,-16.878 37.697,-37.697l0,-98.643c0,-20.819 -16.878,-37.697 -37.697,-37.697z" class="c14"/>
+   <circle id="svg_136" r="13.193" cy="31.414" cx="44.926" class="c13"/>
+  </g>
+ </g>
+</svg>
